@@ -1,0 +1,28 @@
+Package: mzim
+Title: Marginalized Zero-Inflated Models for Count Data
+Version: 0.1.0
+Authors@R: 
+    person(given = "Chendong", 
+           family = "Li", 
+           email = "cliattx@tamu.edu", 
+           role = c("aut", "cre"), 
+           comment = c(ORCID = "https://orcid.org/0009-0007-3123-4706"))
+Description: Implements Marginalized Zero-Inflated Poisson (MZIP) and 
+    Marginalized Zero-Inflated Negative Binomial (MZINB) models. 
+    Unlike standard zero-inflated models (e.g., `pscl::zeroinfl`) which 
+    interpret coefficients conditional on the latent state, this package 
+    models the marginal mean directly, simplifying the interpretation of 
+    population-level effects. Estimation uses a stabilized two-stage 
+    optimization approach (Nelder-Mead refinement followed by BFGS) and 
+    provides robust sandwich variance estimators.
+License: GPL (>= 3)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Depends: 
+    R (>= 3.5.0)
+Imports: 
+    MASS,
+    numDeriv,
+    stats
+LazyData: true
