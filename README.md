@@ -1,7 +1,3 @@
----
-output: github_document
----
-
 # mzim: Marginalized Zero-Inflated Models
 
 The `mzim` package implements Marginalized Zero-Inflated Poisson (MZIP) and Negative Binomial (MZINB) models. 
