@@ -11,3 +11,24 @@ You can install the development version of mzim like so:
 ``` r
 # install.packages("devtools")
 devtools::install_github("cliattx/mzim")
+## Example
+
+This is a basic example which shows you how to fit a Marginalized Zero-Inflated Negative Binomial (MZINB) model using the included `abuse` dataset:
+
+```{r example}
+library(mzim)
+
+# Load the embedded dataset
+data("abuse")
+
+# Fit the model
+# We model the count (ABUSESUM) with Gender and School status
+# We model the zero-inflation with Gender
+fit <- mzim(count_formula = ABUSESUM ~ Gender + School, 
+            zi_formula = ~ Gender, 
+            data = abuse, 
+            family = "zinb")
+
+# View the results (Defaults to Robust Sandwich Estimators)
+summary(fit)
+```
