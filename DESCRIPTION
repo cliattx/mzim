@@ -26,3 +26,5 @@ Imports:
     numDeriv,
     stats
 LazyData: true
+URL: https://github.com/cliattx/mzim
+BugReports: https://github.com/cliattx/mzim/issues
