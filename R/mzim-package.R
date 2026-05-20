@@ -1,0 +1,36 @@
+#' mzim: Marginalized Zero-Inflated Models
+#'
+#' The mzim package fits marginalized zero-inflated Poisson and
+#' marginalized zero-inflated negative binomial models for count outcomes
+#' with excess zeros. The package is intended for applied researchers who
+#' want the regression coefficients to describe the marginal mean of the
+#' outcome in the full sample rather than the conditional mean for a latent
+#' at-risk subgroup.
+#'
+#' Traditional zero-inflated Poisson and zero-inflated negative binomial
+#' models include a count process and a zero-inflation process. The count
+#' coefficients from those models have latent class interpretations. In
+#' contrast, marginalized zero-inflated models directly model the overall
+#' population mean. As a result, exponentiated coefficients from the
+#' marginal mean model can be interpreted as population-average incidence
+#' rate ratios.
+#'
+#' The package currently fits independent-observation mZIP and mZINB models
+#' by maximum likelihood. It provides model-based standard errors from the
+#' Hessian and robust sandwich standard errors based on empirical scores.
+#'
+#' @references
+#' Long, D. L., Preisser, J. S., Herring, A. H., & Golin, C. E. (2014).
+#' A marginalized zero-inflated Poisson regression model with overall
+#' exposure effects. Statistics in Medicine, 33(29), 5151--5165.
+#' https://doi.org/10.1002/sim.6293
+#'
+#' Preisser, J. S., Das, K., Long, D. L., & Divaris, K. (2016).
+#' Marginalized zero-inflated negative binomial regression with application
+#' to dental caries. Statistics in Medicine, 35(10), 1722--1735.
+#' https://doi.org/10.1002/sim.6804
+#'
+#' @docType package
+#' @name mzim-package
+#' @aliases mzim-package
+"_PACKAGE"

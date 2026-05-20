@@ -9,7 +9,7 @@
 \arguments{
 \item{object}{An object of class \code{mzim}.}
 
-\item{robust}{Logical. If TRUE (default), uses robust sandwich standard errors.}
+\item{robust}{Logical. If TRUE, uses sandwich standard errors.}
 
 \item{...}{Additional arguments.}
 }

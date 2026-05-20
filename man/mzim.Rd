@@ -7,13 +7,13 @@
 mzim(count_formula, zi_formula = ~1, data, family = c("zip", "zinb"), ...)
 }
 \arguments{
-\item{count_formula}{A formula for the marginal mean model (e.g., \code{y ~ x1 + x2}).}
+\item{count_formula}{Formula for the marginal mean model.}
 
-\item{zi_formula}{A formula for the zero-inflation model. Defaults to \code{~ 1}.}
+\item{zi_formula}{Formula for the zero-inflation model. Defaults to \code{~ 1}.}
 
-\item{data}{A data frame containing the variables.}
+\item{data}{Data frame.}
 
-\item{family}{A character string: "zip" or "zinb".}
+\item{family}{Character string: \code{"zip"} or \code{"zinb"}.}
 
 \item{...}{Additional arguments passed to \code{optim}.}
 }
@@ -21,8 +21,20 @@ mzim(count_formula, zi_formula = ~1, data, family = c("zip", "zinb"), ...)
 An object of class \code{mzim}.
 }
 \description{
-This function fits a Marginalized Zero-Inflated Poisson (MZIP) or
-Negative Binomial (MZINB) model. It uses a two-stage optimization approach:
-initial refinement with Nelder-Mead followed by the Quasi-Newton BFGS algorithm.
-It provides both model-based and robust sandwich variance estimators.
+Fits a marginalized zero-inflated Poisson or negative binomial model.
+}
+\references{
+Li, C., Kwok, O.-M., & Lawrence, T. (2026). Estimating marginal effects
+with zero-inflated models: A tutorial with the R package mzim.
+Behavior Research Methods. https://doi.org/10.3758/s13428-026-03036-7
+
+Long, D. L., Preisser, J. S., Herring, A. H., & Golin, C. E. (2014).
+A marginalized zero-inflated Poisson regression model with overall
+exposure effects. Statistics in Medicine, 33(29), 5151--5165.
+https://doi.org/10.1002/sim.6293
+
+Preisser, J. S., Das, K., Long, D. L., & Divaris, K. (2016).
+Marginalized zero-inflated negative binomial regression with application
+to dental caries. Statistics in Medicine, 35(10), 1722--1735.
+https://doi.org/10.1002/sim.6804
 }

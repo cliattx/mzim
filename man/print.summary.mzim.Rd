@@ -2,10 +2,18 @@
 % Please edit documentation in R/mzim.R
 \name{print.summary.mzim}
 \alias{print.summary.mzim}
-\title{Print method for summary.mzim}
+\title{Print method for summary.mzim objects}
 \usage{
 \method{print}{summary.mzim}(x, ...)
 }
+\arguments{
+\item{x}{An object of class \code{summary.mzim}.}
+
+\item{...}{Additional arguments.}
+}
+\value{
+Invisibly returns \code{x}.
+}
 \description{
-Print method for summary.mzim
+Print method for summary.mzim objects
 }

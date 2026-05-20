@@ -1,0 +1,51 @@
+citHeader("To cite mzim, please use:")
+
+bibentry(
+  bibtype = "Article",
+  title = "Estimating marginal effects with zero-inflated models: A tutorial with the R package mzim",
+  author = c(
+    person("Chendong", "Li"),
+    person("Oi-Man", "Kwok"),
+    person("Timothy", "Lawrence")
+  ),
+  journal = "Behavior Research Methods",
+  year = "2026",
+  doi = "10.3758/s13428-026-03036-7",
+  note = "In press"
+)
+
+citHeader("The statistical models implemented in mzim are based on:")
+
+bibentry(
+  bibtype = "Article",
+  title = "A marginalized zero-inflated Poisson regression model with overall exposure effects",
+  author = c(
+    person("D. Leann", "Long"),
+    person("John S.", "Preisser"),
+    person("Amy H.", "Herring"),
+    person("Carol E.", "Golin")
+  ),
+  journal = "Statistics in Medicine",
+  year = "2014",
+  volume = "33",
+  number = "29",
+  pages = "5151--5165",
+  doi = "10.1002/sim.6293"
+)
+
+bibentry(
+  bibtype = "Article",
+  title = "Marginalized zero-inflated negative binomial regression with application to dental caries",
+  author = c(
+    person("John S.", "Preisser"),
+    person("Kalyan", "Das"),
+    person("D. Leann", "Long"),
+    person("Kimon", "Divaris")
+  ),
+  journal = "Statistics in Medicine",
+  year = "2016",
+  volume = "35",
+  number = "10",
+  pages = "1722--1735",
+  doi = "10.1002/sim.6804"
+)
