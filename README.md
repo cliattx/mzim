@@ -8,7 +8,7 @@ output: github_document
 
 The package was developed to accompany:
 
-> Li, C., Kwok, O.-M., & Lawrence, T. (2026). *Estimating marginal effects with zero-inflated models: A tutorial with the R package mzim*. Behavior Research Methods. https://doi.org/10.3758/s13428-026-03036-7
+> Li, C., Kwok, O.-M., & Lawrence, T. (2026). *Estimating marginal effects with zero-inflated models: A tutorial with the R package mzim*. Behavior Research Methods. In Press.
 
 ## Installation
 
@@ -62,7 +62,7 @@ summary(fit, robust = FALSE)
 
 To cite `mzim`, please use:
 
-Li, C., Kwok, O.-M., & Lawrence, T. (2026). *Estimating marginal effects with zero-inflated models: A tutorial with the R package mzim*. Behavior Research Methods. https://doi.org/10.3758/s13428-026-03036-7
+Li, C., Kwok, O.-M., & Lawrence, T. (2026). *Estimating marginal effects with zero-inflated models: A tutorial with the R package mzim*. Behavior Research Methods. In Press.
 
 
 ## License
